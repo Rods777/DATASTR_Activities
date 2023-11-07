@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "*.embeddedhtml": "html",
+        "iostream": "cpp",
+        "ostream": "cpp",
+        "bitset": "cpp",
+        "random": "cpp",
+        "type_traits": "cpp"
+    }
+}
