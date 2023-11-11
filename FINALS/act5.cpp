@@ -28,7 +28,7 @@ void displayArray(vector<string>& names){
 
 int main()
 {
-    vector<string> names = { "Clark", "Mark", "Eric", "Ericson", "Michael", "Joshua", "Ely", "Christof", "Alfie"};
+    vector<string> names = {"Clark", "Mark", "Eric", "Ericson", "Michael", "Joshua", "Ely", "Christof", "Alfie"};
 
     // Display Unsorted Array
     cout << "Unsorted Names: ";
