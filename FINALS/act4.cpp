@@ -4,43 +4,43 @@ using namespace std;
 // Name: Cuyag, Rodel Q. Section: BSCS-2C
 
 // Function that performs Insertion Sort
-void insertionSort(int arr[], int length){
+void insertionSort(int num[], int length){
     for (int i = 1; i < length; i++){ 
-        int key = arr[i];
+        int key = num[i];
         int j = i - 1; 
 
-        while(j >= 0 && key > arr[j]){ 
-            arr[j + 1] = arr[j]; 
+        while(j >= 0 && key > num[j]){ 
+            num[j + 1] = num[j]; 
             j--;
         }
 
-        arr[j + 1] = key;  
+        num[j + 1] = key;  
     }
 }
 
 
 // Function that outputs the Array Values
-void displayArray (int arr[], int length){
+void displayArray (int num[], int length){
     for(int i = 0; i < length; i++){
-        cout << arr[i] << " ";
+        cout << num[i] << " ";
     }
     cout << endl;   
 }
 
 int main()
 {
-    int array[] = {0, -2 ,-5, 8, 6, 10, 15, 99, 33, -9, -12, 8, -2};
-    int arrayLength = sizeof(array) / sizeof(array[0]);
+    int number[] = {0, -2 ,-5, 8, 6, 10, 15, 99, 33, -9, -12, 8, -2};
+    int arrayLength = sizeof(number) / sizeof(number[0]);
 
     // Displaying Unsorted Array
     cout << "Unsorted Array: ";
-    displayArray(array, arrayLength);
+    displayArray(number, arrayLength);
 
 
     // Displaying Insertion Sorted Array (Descending Order)
-    insertionSort(array, arrayLength);
+    insertionSort(number, arrayLength);
     cout << "Insertion Sorted Array (Descending Order): ";
-    displayArray(array, arrayLength);
+    displayArray(number, arrayLength);
 
     return 0;
 }
